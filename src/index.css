@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg_color: #363844;
+  --color_items:#7AE3BA;
+  --color_items_hover:#4D7C6D;
+  --color_items_active:#2A4B4D;
+}
+#root{
+  background-color: var(--bg_color);
+  width: 100%;
+  height: 100vh;
+  padding: 15px 50px;
+}
+.card_neomorfism{
+  box-shadow: -4px -4px 10px 0px rgba(156, 156, 156, 0.459), 4px 4px 10px 0px rgba(0, 0, 0, 0.61);
+  background-color: var(--bg_color);
+  border-radius: 30px;
+}
