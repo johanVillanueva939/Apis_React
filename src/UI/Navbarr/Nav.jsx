@@ -1,12 +1,14 @@
-import './Nav.css'
-import { NavLink } from 'react-router-dom'
+import "./Nav.css";
+import { NavLink } from "react-router-dom";
 
 export const Nav = ({ route, style, children }) => {
-    return (
-        <>
-            <NavLink className={style} to={route}>{children}</NavLink>
-        </>
-    )
-}
+	return (
+		<div className="w-fit">
+			<NavLink className={style} to={route}>
+				{children}
+			</NavLink>
+		</div>
+	);
+};
 
-export default Nav
+export default Nav;

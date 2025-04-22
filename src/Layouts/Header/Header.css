@@ -1,7 +1,48 @@
+/* Header styles for the main application layout */
 #Head{
     padding: 15px 50px;
 }
+.Title{
+    font-size: clamp(1rem, 2vw, 2rem);
+    color: var(--color_items);
+    text-align: center;
+}
+/* Styles for the logos and Logo's section */
+.logoApi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px 0;
+    color: var(--color_items);
+}
+.logoApi:hover{
+    color: var(--color_items_hover);
+}
+.logoApi:active{
+    transform: scale(0.9);
+    color: var(--color_items_active);
+}
+/* Logos */
+.logoGiphy{
+    width: clamp(1rem, 2vw, 2rem);
+}
+.logoRick{
+    width: clamp(1.4rem, 2.4vw, 2.8rem);
+}
+.logoCat{
+    width: clamp(2rem, 3.4vw, 3rem);
+}
 .navigation{
-    width: 150px;
-    height: 40px;
+    width: fit-content;
+}
+#NavsHeader{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(.5rem, 2vw, 2rem);
+    place-items: center;
+}
+.ApiName{
+    font-size: clamp(1rem, 2vw, 2rem);
 }

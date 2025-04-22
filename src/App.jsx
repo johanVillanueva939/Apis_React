@@ -1,15 +1,14 @@
-import React from 'react';
-import Header from './Layouts/Header/Header';
-import Nav from './UI/Navbarr/Nav';
-function App() {
+import React from "react";
+import Header from "./Layouts/Header/Header";
+import RickMorty from "./Pages/Rick_Morty/RickMorty";
 
-  return (
-    <>
-      <Header />
-      <Nav />
-      <div>App</div>
-    </>
-  )
+function App() {
+	return (
+		<>
+			<Header />
+			<RickMorty />
+		</>
+	);
 }
 
-export default App
+export default App;
